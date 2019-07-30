@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -l
+#This script was created by Koen Herten
 
 SCRIPT=$(readlink -f $0);
 SCRIPTPATH=`dirname $SCRIPT`
@@ -53,7 +54,7 @@ fi
 #				    #
 #####################################
 
-echo "# Koen Tricks and Scripts" > README.md
+echo "# Koen's Tricks and Scripts" > README.md
 
 echo "" >> README.md
 echo "Tool list:" >> README.md
@@ -68,11 +69,11 @@ echo "" >> README.md
 for tool in `ls -1 *sh`;
 do
 	echo "" >> README.md
-	sh $tool -h md >> README.md
+	./$tool -h md >> README.md
 	echo "" >> README.md
 done
 
 if [ "$MUTE" == "0" ]; then
-	sh viewer_md.sh README.md
+	./viewer_md.sh README.md
 fi
 

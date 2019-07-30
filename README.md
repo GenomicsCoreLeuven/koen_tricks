@@ -1,10 +1,12 @@
-# Koen Tricks and Scripts
+# Koen's Tricks and Scripts
 
 Tool list:
 
  - cgrep.sh
 
  - cless.sh
+
+ - get_pbs_header.sh
 
  - koen_tricks.sh
 
@@ -52,6 +54,25 @@ Parameters:
  - file       	the file to display
 
  - \-\-h		*cless \-\-h* : the help of less
+
+
+
+## get_pbs_header
+
+This script generates a pbs header for a new script
+
+Usage:
+```bash
+get_pbs_header
+```
+
+Parameters:
+
+ - MAIL=		The mail adress to use (This can be set as a environment variable in .bash_profile))
+
+ - PROJECT=	The project to use (This can be set as a environment variable in .bash_profile)
+
+ - NAME=		The name of the script
 
 
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+#This script was created by Koen Herten
 
 SCRIPT=$(readlink -f $0);
 SCRIPTPATH=`dirname $SCRIPT`
